@@ -25,8 +25,10 @@
         </ul>
       </nav>
       <section class="intro">
+        <div>
         <h1>Hello there, <br />i'm <span class="name">Michael</span></h1>
         <hr>
+      </div>
         <img src="./img/Bewerbungsfoto.jpg" alt="developer of this webiste" />
         <p class="intro__subtitle"><span>Full Stack Web Developer</span></p>
         <div class="socials-intro">
@@ -106,15 +108,25 @@
         <h2>Who am I?</h2>
           <p>I'm an ambitious Developer who <b>pays attention to the little details.</b> I wrote my first lines of code in 2019 on CodeCademy. <br><br>In January 2022 i finally took the leap and joined the Web & App Development Bootcamp by WBS Coding School. The approach here was project based learning. Every week we had 2 lectures about new subjects and every day we had group work to implement the things we have learning into 1 -2 week long projects. After 15 life-changing weeks of intense learning, i finished the bootcamp.<br><br> The last 3 weeks i was at the WBS Campus in Berlin. With 3 other students i worked on a final project, a yoga lesson creator, which we then presented to a jury and a large audience at the campus and at home. I'm amazed at how much i was able to learn in such a short amount time but that was only the beginning of my journey.</p>
         </div>
-        <img src="./img/Michael2.jpg">
+        <div class="image--div">
+          <img src="./img/Michael2.jpg" alt="developer of the portfolio">
+        </div>
+        </section>
       </section>
       <section class="projects">
         <h2>My personal Projects</h2>
       </section>
-      <section class="contact"></section>
-      <section>
+      <section class="contact">
         <h2>Contact</h2>
         <h3>Drop me a massage!</h3>
+        <form>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="text" placeholder="Subject" />
+          <textarea id="Message" name="message" cols="30" rows="5" placeholder="Messsage">
+          </textarea>
+          <input type="submit" value="Submit">
+        </form>
       </section>
     </main>
     <footer></footer>

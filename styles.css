@@ -5,11 +5,9 @@
   --clr-accent: #bf94e4;
   --shadow: 0.25em 0.25em 0.75em rgb(0, 0, 0, 0.25),
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
-  --background-color: linear-gradient(
-    -70deg,
-    #d9b08c 30%,
-    rgba(0, 0, 0, 0) 30%
-  );
+  --background-color: linear-gradient(-70deg,
+      #d9b08c 30%,
+      rgba(0, 0, 0, 0) 30%);
 }
 
 *,
@@ -41,7 +39,6 @@ header {
 .nav {
   display: flex;
   justify-content: flex-end;
-  position: relative;
   top: 1em;
   right: 5em;
   list-style: none;
@@ -52,24 +49,25 @@ header {
   position: relative;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   text-decoration: none;
+  color: var(--clr-dark);
 }
 
-nav > ul > li + li {
+nav>ul>li+li {
   padding-left: 2em;
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
   text-decoration: underline;
   text-underline-offset: 0.7em;
 }
 
-nav > ul > li > a:visited {
+nav>ul>li>a:visited {
   color: var(--clr-dark);
 }
 
-nav > ul > li {
+nav>ul>li {
   padding: 1em 0;
 }
 
@@ -114,7 +112,7 @@ h1 {
   transform: skew(-30deg);
 }
 
-.intro__subtitle > span {
+.intro__subtitle>span {
   display: block;
   transform: skew(30deg);
 }
@@ -137,7 +135,7 @@ h1 {
   font-size: 4em;
 }
 
-.socials-intro > a {
+.socials-intro>a {
   margin: 0.5em 1.5em;
 }
 
@@ -179,6 +177,10 @@ h1 {
   .intro__subtitle {
     font-size: 2rem;
   }
+
+  .intro {
+    margin-top: 3em;
+  }
 }
 
 @media only screen and (min-width: 386px) and (max-width: 598px) {
@@ -218,7 +220,7 @@ h1 {
   margin: 2em 2em;
 }
 
-#skills > h2 {
+#skills>h2 {
   font-size: 2.75rem;
   flex-basis: 10%;
   margin: auto 1em auto;
@@ -299,7 +301,7 @@ h1 {
     margin: 0 2em;
   }
 
-  #skills > h2 {
+  #skills>h2 {
     margin: 0 auto;
   }
 }
@@ -337,7 +339,7 @@ h1 {
   flex-wrap: wrap;
 }
 
-.work > h2 {
+.work>h2 {
   margin: 0;
   padding: 0.5em 0 0 0;
   font-size: 2.75rem;
@@ -348,7 +350,7 @@ h1 {
   margin-top: 0;
 }
 
-.work > hr {
+.work>hr {
   width: 30%;
   border-top: 2px var(--clr-dark) solid;
   margin-bottom: 2em;
@@ -357,26 +359,62 @@ h1 {
 /* ABOUT */
 
 .about {
-  display: flex;
-  justify-content: center;
-  margin: 6em 2em 0 2em;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  margin: 6em auto 0 auto;
+  justify-items: center;
+  max-width: 1300px;
 }
 
 .about h2 {
   font-size: 2.75rem;
   margin-top: 0;
 }
+
 .about img {
-  max-width: 20%;
-  height: auto;
-  display: block;
-  margin: 0 2em;
+  margin: 1em 2em 0 2em;
   box-shadow: var(--shadow);
+  min-width: 300px;
+  max-width: 100%;
+  height: auto;
 }
 
 .about-text {
-  max-width: 800px;
   font-size: 1.3rem;
   line-height: 1.7;
-  min-width: 300px;
+  margin-left: 2em;
+}
+
+.image--div {
+  margin-right: 2em;
+  overflow: hidden;
+  align-self: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact h2 {
+  font-size: 2.75rem;
+  margin: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: 3px solid #303179;
+  padding: 1em;
+  margin: 1em;
+}
+
+textarea {
+  border: 3px solid #303179;
+  padding: 1em;
+  margin: 1em;
 }
