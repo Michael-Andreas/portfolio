@@ -25,7 +25,7 @@
         </ul>
       </nav>
       <section class="intro">
-        <div>
+        <div class="welcome-message">
         <h1>Hello there, <br />i'm <span class="name">Michael</span></h1>
         <hr>
       </div>
@@ -38,23 +38,23 @@
       </section>
     </header>
 <section class="work">
-  <h2>Skills</h2>
+  <h2>Skillset</h2>
   <hr>
   <div class="work-container">
     <div class="work-paragraph">
       <h3>Frontend</h3>
-      <p>Good design is dear to my heart. I value clean, minimal and visually appealing UIs.</p>
+      <p>Good design is dear to my heart. I value clean, minimal and visually appealing UI while not compromissing intuitive UX.</p>
     </div>
-    <div class="work-paragraph">
+    <div class="work-paragraph work-paragraph--middle">
       <h3>Responsive Design</h3>
-      <p> As up to 70 percent of web traffic comes from mobile devices,
-        applications must be planned and sized accordingly.
+      <p>
+        Web Applications must be planned and sized accordingly to look good on Smartphones, Tablets and Desktops.
         All my Websites are designed in a way that they're aesthetically pleasing and user-friendly on all screen sizes.
       </p>
     </div>
     <div class="work-paragraph">
       <h3>Backend</h3>
-      <p>A sturdy and secure Backend is the backbone of every website and app.</p>
+      <p>A sturdy and secure Backend is the backbone of every website and app. Well organzided Database bla bla bla</p>
     </div>
   </div>
 </section>
@@ -115,17 +115,32 @@
       </section>
       <section class="projects">
         <h2>My personal Projects</h2>
+          <div class="card-container">
+            <div class="card">
+              <div class="card-header">
+                <img src="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg" alt="rover" />
+              </div>
+              <div class="card-body">
+                <span class="tag tag-teal">Technology</span>
+                <h4>
+Yoga Lesson Planner
+                </h4>
+                <p>
+                  An exploration into the truck's polarising design
+                </p>
+                </div>
+              </div>
+            </div>
       </section>
       <section class="contact">
         <h2>Contact</h2>
-        <h3>Drop me a massage!</h3>
+        <h3>If you want to get in contact with me, just fill out the form below or message me via Email. <br> You can also connect with me on my socials =></h3>
         <form>
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <input type="text" placeholder="Subject" />
-          <textarea id="Message" name="message" cols="30" rows="5" placeholder="Messsage">
-          </textarea>
-          <input type="submit" value="Submit">
+          <input type="text" placeholder="Name" required/>
+          <input type="email" placeholder="Email" required/>
+          <input type="text" placeholder="Subject" required/>
+          <textarea name="message" rows="7" placeholder="Your Message here" required></textarea>
+          <input type="submit" value="SEND">
         </form>
       </section>
     </main>
