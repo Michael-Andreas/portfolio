@@ -5,26 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Michaels Portfolio</title>
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
     <script src="https://kit.fontawesome.com/daab636bb2.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header id="#home">
-      <nav>
-        <ul class="nav">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#skills">Skillset</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <section class="intro">
+    <section class="hero" id="home">
+    <header class="header" data-header>
+      <div class="nav-container">
+
+        <a href="#" class="logo">Michael Andreas</a>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li>
+              <a href="#skillset" class="navbar-link" data-nav-link>Skillset</a>
+            </li>
+
+            <li>
+              <a href="#about" class="navbar-link" data-nav-link>About</a>
+            </li>
+
+            <li>
+              <a href="#projects" class="navbar-link" data-nav-link>Projects</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+            </li>
+
+          </ul>
+        </nav>
+
+        <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+      </div>
+    </header>
+      <div class="intro">
         <div class="welcome-message">
         <h1>Hello there, <br />i'm <span class="name">Michael</span></h1>
         <hr>
@@ -32,12 +60,13 @@
         <img src="./img/Bewerbungsfoto.jpg" alt="developer of this webiste" />
         <p class="intro__subtitle"><span>Full Stack Web Developer</span></p>
         <div class="socials-intro">
-          <a  class="intro-linkedin" href="https://www.linkedin.com/in/michaelxandreas/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <span>Check out my GitHub</span>
+          <i class="fa-solid fa-right-long arrow"></i>
           <a class="intro-github" href="https://github.com/Michael-Andreas" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
-      </section>
-    </header>
-<section class="work">
+      </div>
+    </section>
+<section class="work" id="skillset">
   <h2>Skillset</h2>
   <hr>
   <div class="work-container">
@@ -45,11 +74,11 @@
       <h3>Frontend</h3>
       <p>Good design is dear to my heart. I value clean, minimal and visually appealing UI while not compromissing intuitive UX.</p>
     </div>
-    <div class="work-paragraph work-paragraph--middle">
+    <div class="work-paragraph">
       <h3>Responsive Design</h3>
       <p>
         Web Applications must be planned and sized accordingly to look good on Smartphones, Tablets and Desktops.
-        All my Websites are designed in a way that they're aesthetically pleasing and user-friendly on all screen sizes.
+        All my Websites are designed in a way that, they're aesthetically pleasing and user-friendly on all screen sizes.
       </p>
     </div>
     <div class="work-paragraph">
@@ -106,44 +135,96 @@
       <section id="about" class="about">
         <div class="about-text">
         <h2>Who am I?</h2>
-          <p>I'm an ambitious Developer who <b>pays attention to the little details.</b> I wrote my first lines of code in 2019 on CodeCademy. <br><br>In January 2022 i finally took the leap and joined the Web & App Development Bootcamp by WBS Coding School. The approach here was project based learning. Every week we had 2 lectures about new subjects and every day we had group work to implement the things we have learning into 1 -2 week long projects. After 15 life-changing weeks of intense learning, i finished the bootcamp.<br><br> The last 3 weeks i was at the WBS Campus in Berlin. With 3 other students i worked on a final project, a yoga lesson creator, which we then presented to a jury and a large audience at the campus and at home. I'm amazed at how much i was able to learn in such a short amount time but that was only the beginning of my journey.</p>
+          <p>I'm an ambitious Developer from Bad Reichenhall who <b>pays attention to the little details and loves learning.</b> I wrote my first lines of code in 2019 on CodeCademy. <br><br>In January 2022 i finally took the leap and joined the Web & App Development Bootcamp by WBS Coding School. The approach here was project based learning. Every week we had 2 lectures about new subjects and every day we had group work to implement the things we have learning into 1 - 2 week long projects. After 15 life-changing weeks of intense learning, i finished the bootcamp.<br><br> The last 3 weeks i was at the WBS Campus in Berlin. With 3 other students i worked on a final project, a yoga lesson creator, which we then presented to a jury and a large audience at the campus and at home. I'm amazed at how much i was able to learn in such a short amount time but that was only the beginning of my journey.</p>
         </div>
         <div class="image--div">
           <img src="./img/Michael2.jpg" alt="developer of the portfolio">
         </div>
         </section>
       </section>
-      <section class="projects">
+      <section class="projects" id="projects">
         <h2>My personal Projects</h2>
+
           <div class="card-container">
+
             <div class="card">
               <div class="card-header">
-                <img src="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg" alt="rover" />
+                <img src="https://storage.googleapis.com/portfolioly-bucket/preview_yogalessoncreator.jpg" alt="Yoga Lesson Creator Website" />
               </div>
               <div class="card-body">
-                <span class="tag tag-teal">Technology</span>
-                <h4>
-Yoga Lesson Planner
-                </h4>
+                <div class="tag-container">
+                <span class="tag tag-teal">React</span>
+                <span class="tag tag-pink">SCSS</span>
+                <span class="tag tag-teal">Tailwind</span>
+                <span class="tag tag-teal">Node.js</span>
+                <span class="tag tag-teal">MongoDB</span>
+              </div>
+                <h4>Yoga Lesson Planner</h4>
                 <p>
-                  An exploration into the truck's polarising design
+                  The 3 week long final project we created at WBS Coding School Campus in Berlin.
                 </p>
+                <div class="card-buttons">
+                  <a>Live Demo</a>
+                  <a>GitHub</a>
+                </div>
                 </div>
               </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <img src="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg" alt="rover" />
+                </div>
+                <div class="card-body">
+                  <span class="tag tag-teal">Technology</span>
+                  <h4>
+  Yoga Lesson Planner
+                  </h4>
+                  <p>
+                    The 3 week long final project we created at WBS Coding School Campus in Berlin.
+                  </p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header">
+                    <img src="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg" alt="rover" />
+                  </div>
+                  <div class="card-body">
+                    <span class="tag tag-teal">Technology</span>
+                    <h4>
+    Yoga Lesson Planner
+                    </h4>
+                    <p>
+                      The 3 week long final project we created at WBS Coding School Campus in Berlin.
+                    </p>
+                    </div>
+                  </div>
+
             </div>
+
+
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <h2>Contact</h2>
-        <h3>If you want to get in contact with me, just fill out the form below or message me via Email. <br> You can also connect with me on my socials =></h3>
+        <h3>If you want to get in contact with me, just fill out the form below or message me via Email.</h3>
         <form>
           <input type="text" placeholder="Name" required/>
           <input type="email" placeholder="Email" required/>
           <input type="text" placeholder="Subject" required/>
           <textarea name="message" rows="7" placeholder="Your Message here" required></textarea>
-          <input type="submit" value="SEND">
+          <button type="submit" class="submit-btn">
+            <span class="span">Send</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
         </form>
+        <div class="socials">
+          <p>michaelandreas246@gmail.com</p>
+        </div>
       </section>
     </main>
     <footer></footer>
+
+    <script src="./script.js" defer></script>
+
   </body>
 </html>
