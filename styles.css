@@ -246,7 +246,7 @@ h1 {
 }
 
 .intro img {
-  margin: 0;
+  margin: 2em 0 0 0;
   max-width: 25%;
   justify-self: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -346,7 +346,12 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 386px) and (max-width: 598px) {
+@media only screen and (max-width: 500px) {
+
+  .intro {
+    gap: 4rem;
+  }
+
   .intro hr {
     top: -1.6em;
     left: 3.5em;
@@ -354,6 +359,7 @@ h1 {
 
   h1 {
     margin-bottom: 0;
+    font-size: 4rem;
   }
 
   .intro__subtitle {
@@ -870,6 +876,10 @@ textarea:focus {
     width: 100%;
   }
 
+  .contact-form form {
+    width: 100%;
+  }
+
   .contact-links {
     width: 100%;
     text-align: center;
@@ -885,6 +895,10 @@ textarea:focus {
 @media only screen and (max-width: 500px) {
   .contact-links p {
     font-size: 1.1rem;
+  }
+
+  .logo {
+    font-size: 1.4rem;
   }
 }
 
