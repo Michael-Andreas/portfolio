@@ -873,13 +873,12 @@ textarea:focus {
   .contact-links {
     width: 100%;
     text-align: center;
-    padding-bottom: 2em;
+    padding: 0 1em 2em 1em;
   }
 
   .link-container {
     display: flex;
-    justify-content: center;
-    padding-left: 3em;
+    padding-left: 2em;
   }
 }
 
