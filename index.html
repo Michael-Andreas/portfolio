@@ -224,10 +224,10 @@
         <div class="contact-container">
           <div class="contact-form">
             <h3>If you want to get in contact with me, just fill out the form below.</h3>
-        <form>
-          <input type="text" placeholder="Name" required/>
-          <input type="email" placeholder="Email" required/>
-          <input type="text" placeholder="Subject" required/>
+        <form name="contactForm" method="POST" data-netlify="true">
+          <input name="name" type="text" placeholder="Name" required/>
+          <input name="email" type="email" placeholder="Email" required/>
+          <input name="subject" type="text" placeholder="Subject" required/>
           <textarea name="message" rows="5" placeholder="Your Message here" required></textarea>
           <button type="submit" class="submit-btn">
             <span class="span">Send</span>

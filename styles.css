@@ -214,20 +214,18 @@ h1 {
   position: relative;
 }
 
-.welcome-message {}
-
 .name {
   font-weight: 900;
 }
 
 .intro hr {
-  position: relative;
+  position: absolute;
   top: -1.6em;
   left: 3.4em;
   height: 0.8rem;
   width: 16.5rem;
   background: #f5cac2;
-  border: none;
+  border: 5px solid black;
   transform: skew(-30deg);
   z-index: -1;
 }
@@ -363,17 +361,6 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 386px) {
-  .intro__subtitle {
-    padding: 0.5em 3em;
-  }
-
-  .intro hr {
-    top: -5.3em;
-    left: -2.2em;
-  }
-}
-
 @media only screen and (max-width: 750px) {
   .intro__subtitle {
     padding: 0.5em 2em;
@@ -383,19 +370,27 @@ h1 {
 }
 
 @media only screen and (max-width: 500px) {
+  .welcome-message h1 {
+    margin: 0;
+  }
+
   .intro__subtitle {
-    font-size: 1.5rem;
     text-align: center;
-    padding: 0 0.5em;
+    padding: 0.5em 1em;
+  }
+
+  .intro__subtitle span {
+    font-size: 1.3rem;
   }
 
   .socials-intro {
-    margin-top: 2em;
+    margin: 0.5em 0 0 0.5em;
+    padding: 0;
     font-size: 1.5rem;
   }
 
   .intro {
-    margin: auto;
+    margin-top: 6.5em;
   }
 }
 
@@ -885,6 +880,12 @@ textarea:focus {
     display: flex;
     justify-content: center;
     padding-left: 3em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contact-links p {
+    font-size: 1.1rem;
   }
 }
 
