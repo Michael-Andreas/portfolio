@@ -655,7 +655,6 @@ h1 {
   padding: 0 20px 0 20px;
   margin-top: 10px;
   min-height: 325px;
-  max-height: 100%;
 }
 
 .tag-container {
@@ -857,6 +856,10 @@ textarea:focus {
   margin-right: auto;
 }
 
+.contact-links a {
+  color: #141850;
+}
+
 .contact-links i {
   display: inline-block;
   font-size: 2.3rem;
@@ -887,7 +890,6 @@ textarea:focus {
     margin: auto;
   }
 
-  .link-container {}
 }
 
 @media only screen and (max-width: 500px) {
@@ -903,6 +905,6 @@ textarea:focus {
 footer {
   background-color: #fae5df;
   text-align: center;
-  padding: 1em 0;
+  padding: 0.5em 0;
   font-size: 1.2rem;
 }
