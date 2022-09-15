@@ -156,6 +156,7 @@ a {
   .header.active {
     background-color: white;
     padding-block: 20px;
+    box-shadow: 0px 2px 11px 2px rgba(14, 14, 14, 0.3);
   }
 
   .navbar,
@@ -346,7 +347,7 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
 
   .intro {
     margin-top: auto;
@@ -379,13 +380,17 @@ h1 {
   }
 
   .intro__subtitle span {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .socials-intro {
     margin: 1em 0 0 0.5em;
     padding: 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .fa-github {
+    font-size: 3rem;
   }
 }
 
