@@ -353,6 +353,10 @@ h1 {
 
 @media only screen and (max-width: 800px) {
 
+  .hero {
+    height: auto;
+  }
+
   .intro {
     margin-top: 4em;
     margin-bottom: 1em;
