@@ -354,8 +354,9 @@ h1 {
 @media only screen and (max-width: 800px) {
 
   .intro {
-    margin-top: auto;
+    margin-top: 4em;
     margin-bottom: 1em;
+    justify-content: space-evenly;
   }
 
   .intro hr {
