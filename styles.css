@@ -247,7 +247,7 @@ h1 {
 }
 
 .intro img {
-  margin: 2em 0 0 0;
+  margin: 1em 0 0 0;
   max-width: 25%;
   justify-self: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -315,6 +315,10 @@ h1 {
   h1 {
     margin: 0;
   }
+
+  .intro img {
+    margin-top: 2em;
+  }
 }
 
 @media only screen and (min-width: 1921px) {
@@ -351,7 +355,6 @@ h1 {
 
   .intro {
     margin-top: auto;
-    gap: 0.3em;
     margin-bottom: 1em;
   }
 
@@ -561,6 +564,8 @@ h1 {
   }
 }
 
+/* ABOUT */
+
 .about h2 {
   font-size: 2.75rem;
   margin: 0;
@@ -569,7 +574,7 @@ h1 {
 .about-text {
   font-size: 1.1rem;
   line-height: 1.7;
-  margin: 0 2em;
+  margin: 0 1em;
 }
 
 .about img {
@@ -578,7 +583,6 @@ h1 {
   margin: 3em auto 0;
 }
 
-/* ABOUT */
 @media only screen and (min-width: 1000px) {
 
   .about {
