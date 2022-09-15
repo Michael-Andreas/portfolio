@@ -446,6 +446,13 @@ h1 {
   margin-bottom: 2em;
 }
 
+@media only screen and (max-width: 800px) {
+  .work {
+    margin: 2em 1em 1em 1em;
+    padding: 0.3em;
+  }
+}
+
 /* Techstack */
 
 #skills {
@@ -535,7 +542,7 @@ h1 {
 @media only screen and (max-width: 850px) {
   #skills {
     flex-direction: column;
-    margin: 2em;
+    margin: 1em;
   }
 
   #skills>h2 {
