@@ -47,6 +47,7 @@ a {
   height: 100vh;
   background: url("./img/vecteezy_grey-gradient-abstract-backgrounds_.jpg") no-repeat center/cover;
   box-shadow: 0px 6px 20px -10px rgb(73, 71, 71);
+  overflow: hidden;
 }
 
 /*Navbar */
@@ -358,7 +359,7 @@ h1 {
   }
 
   .intro {
-    margin-top: 4em;
+    margin-top: 6em;
     margin-bottom: 1em;
     justify-content: space-evenly;
   }
@@ -859,6 +860,7 @@ textarea:focus {
   width: 50%;
   padding-top: 2em;
   padding-bottom: 6em;
+  overflow: hidden;
 }
 
 .link-container {
