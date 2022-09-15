@@ -359,7 +359,7 @@ h1 {
   }
 
   .intro {
-    margin-top: 6em;
+    margin-top: 5.5em;
     margin-bottom: 1em;
     justify-content: space-evenly;
   }
@@ -908,6 +908,16 @@ textarea:focus {
     text-align: center;
     padding: 0 1em 2em 1em;
     margin: auto;
+  }
+
+  input {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  textarea {
+    margin-left: 0;
+    margin-right: 0;
   }
 
 }
