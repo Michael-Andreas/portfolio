@@ -643,19 +643,17 @@ h1 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 2em 0 4em 0;
+  padding: 2em 0;
   margin: 0 auto;
-  gap: 4em;
+  gap: 2em;
 }
 
 .card {
-  margin: 10px;
+  margin: 10px 2em;
   background-color: #fff;
   border-radius: 20px;
   overflow: hidden;
-  width: 350px;
-  transition: 0.2s ease-in;
-  border: 1px solid black;
+  max-width: 450px;
   transition: all 0.2s ease-in;
 }
 
@@ -667,20 +665,16 @@ h1 {
 }
 
 .card-body {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0 20px 0 20px;
+  padding: 0 20px 20px 20px;
   margin-top: 10px;
-  min-height: 325px;
 }
 
 .tag-container {
   margin-top: auto;
   height: 65px;
-  position: relative;
-  bottom: 2em;
 }
 
 .tag {
@@ -723,15 +717,10 @@ h1 {
   margin: 0 0 1em 0;
 }
 
-.card:hover {
-  transform: scale(1.05);
-}
-
 .card-buttons {
   align-self: center;
   justify-content: center;
-  position: relative;
-  bottom: 1.3em;
+  margin-top: auto;
 }
 
 .card-buttons a {
@@ -746,6 +735,13 @@ h1 {
 
 .card-buttons a:hover {
   background-color: rgb(75, 75, 75);
+}
+
+@media only screen and (min-width:600px) {
+
+  .card:hover {
+    transform: scale(1.05);
+  }
 }
 
 /* Contact */
