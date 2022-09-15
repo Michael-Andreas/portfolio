@@ -349,7 +349,9 @@ h1 {
 @media only screen and (max-width: 500px) {
 
   .intro {
-    gap: 4rem;
+    margin-top: auto;
+    gap: 0.3em;
+    margin-bottom: 1em;
   }
 
   .intro hr {
@@ -362,8 +364,28 @@ h1 {
     font-size: 4rem;
   }
 
+  .intro img {
+    margin-bottom: 1em;
+  }
+
   .intro__subtitle {
     margin-top: 3em;
+    text-align: center;
+    padding: 0.5em 1em;
+  }
+
+  .welcome-message h1 {
+    margin: 0;
+  }
+
+  .intro__subtitle span {
+    font-size: 1.3rem;
+  }
+
+  .socials-intro {
+    margin: 1em 0 0 0.5em;
+    padding: 0;
+    font-size: 1.5rem;
   }
 }
 
@@ -373,31 +395,6 @@ h1 {
     margin: 1em 0 0 0;
   }
 
-}
-
-@media only screen and (max-width: 500px) {
-  .welcome-message h1 {
-    margin: 0;
-  }
-
-  .intro__subtitle {
-    text-align: center;
-    padding: 0.5em 1em;
-  }
-
-  .intro__subtitle span {
-    font-size: 1.3rem;
-  }
-
-  .socials-intro {
-    margin: 0.5em 0 0 0.5em;
-    padding: 0;
-    font-size: 1.5rem;
-  }
-
-  .intro {
-    margin-top: 6.5em;
-  }
 }
 
 
