@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
     <script src="https://kit.fontawesome.com/daab636bb2.js" crossorigin="anonymous"></script>
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <section class="hero" id="home">
@@ -52,12 +53,11 @@
 
       </div>
     </header>
-      <div class="intro">
+      <div class="intro hidden">
         <div class="welcome-message">
         <h1>Hello there, <br />i'm <span class="name">Michael</span></h1>
-        <hr>
       </div>
-        <img src="./img/Bewerbungsfoto.jpg" alt="developer of this webiste" />
+        <img class="hidden" src="./img/Bewerbungsfoto.jpg" alt="developer of this webiste" />
         <p class="intro__subtitle"><span>Full Stack Web Developer</span></p>
         <div class="socials-intro">
           <span>Check out my GitHub</span>
@@ -66,7 +66,7 @@
         </div>
       </div>
     </section>
-<section class="work" id="skillset">
+<section class="work hidden" id="skillset">
   <h2>Skillset</h2>
   <hr>
   <div class="work-container">
@@ -87,7 +87,7 @@
     </div>
   </div>
 </section>
-      <section id="skills">
+<section id="skills" class="hidden">
         <h2>Techstack:</h2>
           <div class="logos">
             <p class="single-logo html-logo">
@@ -132,7 +132,7 @@
                             </p>
         </div>
       </section>
-      <section id="about" class="about">
+      <section id="about" class="about hidden">
         <div class="about-text">
         <h2>Who am I?</h2>
           <br>I'm an ambitious Developer from Bad Reichenhall who <b>pays attention to the little details and loves learning.</b> I wrote my first lines of code in 2019 on CodeCademy. <br></br>In January 2022 i finally took the leap and joined the Web & App Development Bootcamp by WBS Coding School. The approach here was project based learning. Every week we had 2 lectures about new subjects and every day we had group work to implement the things we have learned into 1 - 2 week long projects. We needed to intensively use Git to manage our Projects to effectively work together as Teams of 3 - 4 people. At the end of the week we had to present our work to the teacher and the other students. After 15 life-changing weeks of intense learning, i finished the bootcamp.<br></br> The last 3 weeks i was at the WBS Campus in Berlin. With 3 other students i worked on a final project, a yoga lesson creator, which we then presented to a jury and a large audience at the campus and at home. I'm amazed at how much i was able to learn in such a short amount time but that was only the beginning of my journey.</p>
@@ -144,11 +144,11 @@
       </section>
       <section class="projects" id="projects">
 
-        <h2>My personal Projects</h2>
+        <h2 class="hidden" >My personal Projects</h2>
 
           <div class="card-container">
 
-            <div class="card">
+            <div class="card hidden">
               <div class="card-header">
                 <img src="https://storage.googleapis.com/portfolioly-bucket/preview_yogalessoncreator.jpg" alt="Yoga Lesson Creator Website" />
               </div>
@@ -171,7 +171,7 @@
                 </div>
               </div>
 
-              <div class="card">
+              <div class="card hidden">
                 <div class="card-header">
                   <img src="./img/Screenshot 2022-09-13 180902.png" alt="Quizzful App" />
                 </div>
@@ -192,7 +192,7 @@
                   </div>
                 </div>
 
-                <div class="card">
+                <div class="card hidden">
                   <div class="card-header">
                     <img src="./img/Screenshot 2022-09-16 003110.png" alt="Movie DB Website" />
                   </div>
@@ -218,9 +218,11 @@
 
 
       </section>
-      <section class="contact" id="contact">
+      <section class="contact hidden" id="contact">
+
         <h2>Contact</h2>
         <hr>
+
         <div class="contact-container">
           <div class="contact-form">
             <h3>If you want to get in contact with me, just fill out the form below.</h3>
@@ -245,13 +247,14 @@
         <div class="link-container"><i class="fa-brands fa-square-github"></i><a href="https://github.com/Michael-Andreas" target="_blank"><p>GitHub</p></div></a>
       </div>
     </div>
+
       </section>
+
     </main>
+
     <footer>
       <p>Copyright ©2022 Michael Andreas</p>
     </footer>
-
-    <script src="./script.js" defer></script>
 
   </body>
 </html>
