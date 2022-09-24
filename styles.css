@@ -300,6 +300,10 @@ h1 {
   .intro img {
     margin: 1em 0;
   }
+
+  .socials-intro {
+    margin: 0.5em 0 1em 0;
+  }
 }
 
 @media only screen and (min-width: 1921px) {
@@ -321,7 +325,11 @@ h1 {
 
   .socials-intro {
     font-size: 3rem;
-    margin-top: 1.5em;
+    margin: 1em 0 2em 0;
+  }
+
+  .fa-github {
+    font-size: 6rem;
   }
 }
 
@@ -435,7 +443,7 @@ h1 {
 
 .work>h2 {
   margin: 0;
-  padding: 0.5em 0 0 0;
+  padding: 0;
   font-size: 2.75rem;
   color: #fa654e;
 }
@@ -445,7 +453,7 @@ h1 {
 }
 
 .work>hr {
-  width: 30%;
+  width: 20%;
   border-top: 2px var(--clr-dark) solid;
   margin-bottom: 2em;
 }
@@ -454,6 +462,18 @@ h1 {
   .work {
     margin: 2em 1em 1em 1em;
     padding: 0.3em;
+  }
+
+  .work h2 {
+    padding: 0;
+  }
+
+  .work hr {
+    width: 60%;
+  }
+
+  .work p {
+    font-size: 1.1rem;
   }
 }
 
@@ -549,7 +569,7 @@ h1 {
     margin: 1em;
   }
 
-  #skills>h2 {
+  #skills h2 {
     margin: 0 auto;
   }
 
@@ -616,6 +636,12 @@ h1 {
     align-self: center;
   }
 
+}
+
+@media only screen and (max-width: 800px) {
+  .about p {
+    margin-top: 0;
+  }
 }
 
 /*Projects */
@@ -730,6 +756,17 @@ h1 {
 
 .card-buttons a:hover {
   background-color: rgb(75, 75, 75);
+}
+
+@media only screen and (max-width: 800px) {
+  .projects h2 {
+    margin: 0;
+    padding: 0.2em 0;
+  }
+
+  .card-container {
+    padding-top: 0;
+  }
 }
 
 /* Contact */
@@ -939,8 +976,13 @@ textarea:focus {
 footer {
   background-color: #fae5df;
   text-align: center;
-  padding: 0.5em 0;
+  margin: 0;
   font-size: 1.2rem;
+}
+
+footer p {
+  padding: 0.6em 0;
+  margin: 0;
 }
 
 /* fade in animation */
