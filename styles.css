@@ -574,6 +574,10 @@ h1 {
     margin: 0 auto;
   }
 
+  .single-logo {
+    padding: 0.5em 1em;
+  }
+
 }
 
 @media only screen and (min-width: 2000px) {
@@ -582,7 +586,12 @@ h1 {
   }
 
   .single-logo {
-    padding: 0.5em 3.5em;
+    font-size: 1.5rem;
+    padding: 0.5em 2em;
+  }
+
+  .logos i {
+    font-size: 4em;
   }
 }
 
