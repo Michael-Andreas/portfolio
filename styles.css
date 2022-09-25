@@ -228,6 +228,10 @@ h1 {
   transform: skew(-30deg);
 }
 
+.intro__subtitle p {
+  margin: 0;
+}
+
 .intro__subtitle>span {
   display: block;
   transform: skew(30deg);
@@ -288,7 +292,7 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .intro {
     flex-basis: 80%;
   }
@@ -298,12 +302,14 @@ h1 {
   }
 
   .intro img {
-    margin: 1em 0;
+    margin: 0;
   }
 
   .socials-intro {
-    margin: 0.5em 0 1em 0;
+    margin-bottom: 0.5em;
   }
+
+
 }
 
 @media only screen and (min-width: 1921px) {
