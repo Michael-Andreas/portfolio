@@ -292,7 +292,7 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1600px) {
   .intro {
     flex-basis: 80%;
   }
@@ -312,26 +312,53 @@ h1 {
 
 }
 
-@media only screen and (min-width: 1921px) {
-  .intro__subtitle {
-    font-size: 2rem;
+@media only screen and (min-width: 1441px) and (max-width:1920px) {
+  .socials-intro {
+    margin-bottom: 1em;
   }
 
-  .intro {
-    margin-top: 12em;
+  .intro img {
+    margin: 1em 0;
   }
 
   .intro h1 {
-    font-size: 6rem;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1921px) {
+
+  .intro {
+    flex-basis: 80%;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  .intro img {
+    margin: 1em;
+  }
+
+  .intro__subtitle {
+    padding: 1em 7em;
+  }
+
+  .intro {
+    margin-top: auto;
+  }
+
+  .intro h1 {
+    font-size: 7rem;
   }
 
   .intro__subtitle span {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
   }
 
   .socials-intro {
     font-size: 3rem;
-    margin: 1em 0 2em 0;
+    margin: 0.5em 0 1em 0;
   }
 
   .fa-github {
